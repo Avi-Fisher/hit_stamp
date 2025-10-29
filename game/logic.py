@@ -44,7 +44,7 @@ def init_state(secret,length,max_tries):
 def apply_guess(state,guess):
 
     state["tries_used"] += 1
-    state["history"].append((guess,score_guess(state["secret"],guess)))
+    state["history"].append((guess, score_guess(state["secret"],guess)[0], score_guess(state["secret"],guess)[1] ))
 
 
 
