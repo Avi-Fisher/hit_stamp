@@ -30,10 +30,10 @@ def init_state(secret,length,max_tries):
                  "max_tries":max_tries,
                  "tries_used":0,
                  "allow_leading_zero":bool,
-                 "history":list,
+                 "history":[],
                  "seen":set()}
 
-    return
+    return gamestate
 
 
 
@@ -41,8 +41,19 @@ def init_state(secret,length,max_tries):
 
     return "state"
 
-def apply_guess():
-    return "tuple"
+def apply_guess(state,guess):
+
+    state["tries_used"] += 1
+    state["history"].append((guess,score_guess(state["secret"],guess)))
+
+
+
+
+
+
+
+
+
 
 
 
