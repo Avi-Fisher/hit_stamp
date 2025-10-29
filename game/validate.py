@@ -1,5 +1,23 @@
 def is_valid_game():
-    return "bool"
 
-def is_new_guess():
-    return "bool"
+
+
+
+
+
+
+    return
+
+
+
+
+
+
+
+
+
+def is_new_guess(guess,history):
+    if guess in history:
+        return False
+
+    return True
