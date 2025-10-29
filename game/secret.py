@@ -4,8 +4,7 @@ from random import  randint
 def generate_secret(length):
     secret = ""
 
-
-    while len(secret) < 4:
+    while len(secret) < length:
         number = randint(0, 9)
 
         if str(number) not in secret:
@@ -14,4 +13,3 @@ def generate_secret(length):
 
     return secret
 
-print(generate_secret(4))

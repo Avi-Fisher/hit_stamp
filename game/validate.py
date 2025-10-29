@@ -1,9 +1,13 @@
 def is_valid_game(guess,length):
-    if type(guess) == int:
-        if len(guess) == 4:
-            for i in range(10):
-                if str(i) * 2 not in guess:
-                    return True
+    check_dubll = set()
+
+    if type(guess) == str:
+
+        for i in guess:
+            check_dubll.add(i)
+
+            if len(check_dubll) == length:
+                return True
 
     return False
 
@@ -12,3 +16,7 @@ def is_new_guess(guess,history):
         return False
 
     return True
+
+
+
+
