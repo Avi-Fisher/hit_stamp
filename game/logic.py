@@ -14,7 +14,13 @@ def score_guess(secret,guess):
 
     return "tuple"
 
-def is_won():
+def is_won(bulls,length):
+    if bulls == length:
+        return True
+    return False
+
+
+
     return "bool"
 
 def init_state():
