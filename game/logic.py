@@ -23,7 +23,22 @@ def is_won(bulls,length):
 
     return "bool"
 
-def init_state():
+def init_state(secret,length,max_tries):
+
+    gamestate = {"secret":secret,
+                 "length":length,
+                 "max_tries":max_tries,
+                 "tries_used":0,
+                 "allow_leading_zero":bool,
+                 "history":list,
+                 "seen":set()}
+
+    return
+
+
+
+
+
     return "state"
 
 def apply_guess():
